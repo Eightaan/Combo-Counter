@@ -19,7 +19,7 @@ Hooks:PostHook(HUDObjectives, "init", "ComboInit", function(self, hud, ...)
 		name = "Combo_text",
 		visible = true, 
 		layer = 2, 
-		color = Color(226/255, 8/255, 124/255),
+		color = Color("e2087c"),
 		text = "0", 
 		font_size = 96,
 		font = "fonts/hmcc_font",

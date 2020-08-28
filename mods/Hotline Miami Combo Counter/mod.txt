@@ -6,6 +6,6 @@
 	"supermod_definition" : "hmcc.xml",	
 	"blt_version" : 2,
 	"image" : "icon.png",
-	"color" : "0.15 0.15 0.15",	
-	"version" : "1.0.4",
+	"color" : "0 0.6 0.286",	
+	"version" : "1.0.4"
 }
