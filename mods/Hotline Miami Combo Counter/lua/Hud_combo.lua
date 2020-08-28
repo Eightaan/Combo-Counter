@@ -1,5 +1,5 @@
 Hooks:PostHook(HUDObjectives, "init", "ComboInit", function(self, hud, ...)
-	local font = "fonts/font_digital"
+	local font = "fonts/hmcc_font"
 	if not managers.dyn_resource:has_resource(Idstring("font"), Idstring(font), managers.dyn_resource.DYN_RESOURCES_PACKAGE) then
 		managers.dyn_resource:load(Idstring("font"), Idstring(font), managers.dyn_resource.DYN_RESOURCES_PACKAGE, nil)
 	end
