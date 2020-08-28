@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<assets base_path="assets/" load="startup">
+    <group name="guis/textures/" path="assets/guis/textures/">
+        <file :name="hmcc_bg.texture" :path="hmcc_bg.texture"/>
+    </group>
+	
+	<group name="fonts/" path="assets/fonts/">
+	    <file :name="hmcc_font.font" :path="hmcc_font.font"/>
+        <file :name="hmcc_font.texture" :path="hmcc_font.texture"/>
+    </group>
+</assets>

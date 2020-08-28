@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<mod>
+	<!-- Main code -->
+    <hooks script_path="lua/">
+			<group hook_id="lib/managers/">
+                <post :hook_id="hudmanagerpd2"    :script_path="HotlineCore.lua"/>
+				<post :hook_id="playermanager" :script_path="PlayerManager.lua"/>
+				<post :hook_id="hud/hudobjectives"    :script_path="Hud_combo.lua"/>
+            </group>
+    </hooks>
+
+	<!-- Custom Textures -->
+    <:include src="assets/assets.xml"/>
+</mod>
