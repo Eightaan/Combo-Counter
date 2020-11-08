@@ -5,7 +5,6 @@
 			<group hook_id="lib/managers/">
                 <post :hook_id="hudmanagerpd2"    :script_path="HotlineCore.lua"/>
 				<post :hook_id="playermanager" :script_path="PlayerManager.lua"/>
-				<post :hook_id="hud/hudobjectives"    :script_path="Hud_combo.lua"/>
             </group>
     </hooks>
 
