@@ -7,5 +7,5 @@
 	"blt_version" : 2,
 	"image" : "icon.png",
 	"color" : "0 0.6 0.286",	
-	"version" : "1.0.5"
+	"version" : "1.0.7"
 }
