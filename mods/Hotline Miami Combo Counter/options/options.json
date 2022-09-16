@@ -1,0 +1,29 @@
+  {
+	"menu_id": "HMHCC_menu",
+	"parent_menu_id": "blt_options",
+	"title": "HMHCC_title",
+	"description": "HMHCC_desc",
+	"items": [
+		{
+		    "type": "slider",
+			"id": "panel_position_slider",
+			"title": "panel_position_title",
+			"description": "panel_position_desc",
+			"callback": "callback_panel_position",
+			"value": "panel_position",
+			"max": 500,
+            "min": 0,
+            "step": 10,
+            "default_value": 40
+		},
+		{
+			"type": "toggle",
+			"id": "kill_anim_toggle",
+			"title": "kill_anim_title",
+			"description": "kill_anim_desc",
+			"callback": "callback_kill_anim",
+			"value": "kill_anim",
+			"default_value": false
+		}
+	]
+}

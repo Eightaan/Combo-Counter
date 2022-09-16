@@ -1,6 +1,4 @@
-local kill_anim  = true   -- Enable/Disable the animation when killing a new enemy
-local kill_flash = false  -- Enable / Disable the flashing text when killin a new enemy
-
+local kill_flash = true  -- Enable / Disable the flashing text when killin a new enemy
 
 Hooks:PostHook(HUDManager, "_setup_player_info_hud_pd2", "Combo_setup_player_info_hud_pd2", function(self, ...)
     self._hud_combo_counter = HUDComboCounter:new(managers.hud:script(PlayerBase.PLAYER_INFO_HUD_PD2))
@@ -105,11 +103,13 @@ function HUDComboCounter:open_anim(panel)
     panel:set_x(-150)
     local TOTAL_T = 10/speed
     local t = TOTAL_T
+	local panel_position = HMHCC:GetOption("panel_position") or 40
     while t > 0 do
         local dt = coroutine.yield()
         t = t - dt
         panel:set_x((1 - t / TOTAL_T) * 60)
     end
+	self._combo_panel:set_top(panel_position)
 end
 
 
@@ -163,6 +163,7 @@ function HUDComboCounter:OnKillshot()
     self._kills = self._kills + 1
     self._last_kill_time = self._kill_time
     self._kill_time = self._t
+	local kill_anim = HMHCC:GetOption("kill_anim") or false
 	if kill_anim then
 		Combo_text:animate(callback(self, self, "kill_anim"))
         Combo_text_bg:animate(callback(self, self, "kill_anim"))

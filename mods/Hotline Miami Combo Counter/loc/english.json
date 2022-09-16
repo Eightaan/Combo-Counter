@@ -1,0 +1,9 @@
+{
+	"HMHCC_title" : "Combo Counter",
+	"HMHCC_desc" : "",
+
+	"kill_anim_title" : "Kill anmiation",
+	"kill_anim_desc" : "Animate the counter for each kill.",
+	"panel_position_title" : "vertical position",
+	"panel_position_desc" : "Change the vertical position of the combo counter."
+}
